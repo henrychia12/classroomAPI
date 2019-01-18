@@ -47,7 +47,7 @@ public class ClassroomAccountDBRepository implements ClassroomAccountRepository 
 			manager.persist(newAccount);
 			return "{\"message\": \"has been sucessfully updated\"}";
 		}
-		return"{\"message\": \"details entered is invalid\"}";
+		return"{\"message\": \"details entered are invalid\"}";
 	}
 
 	@Transactional(REQUIRED)
