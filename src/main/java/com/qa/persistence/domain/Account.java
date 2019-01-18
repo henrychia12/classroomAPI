@@ -10,7 +10,7 @@ public class Account {
 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
-	private Long id;
+	private Long classroomID;
 	private String trainerFullName;
 
 	public Account() {
@@ -22,11 +22,11 @@ public class Account {
 	}
 
 	public Long getId() {
-		return id;
+		return classroomID;
 	}
 
 	public void setId(Long id) {
-		this.id = id;
+		this.classroomID = id;
 	}
 
 	public String getTrainerFullName() {
@@ -39,7 +39,7 @@ public class Account {
 
 	@Override
 	public String toString() {
-		return "classroomID: " + id + ", Trainer " + trainerFullName;
+		return "classroomID: " + classroomID + ", Trainer: " + trainerFullName;
 	}
 
 }

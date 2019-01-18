@@ -31,20 +31,20 @@ public class AccountEndpoint {
 		return service.createAccount(account);
 	}
 
-	@Path("/deleteAccount/{id}")
+	@Path("/deleteAccount/{classroomID}")
 	@DELETE
 	@Produces({ "application/json" })
-	public String deleteAccount(@PathParam("id") Long id) {
+	public String deleteAccount(@PathParam("classroomID") Long classroomID) {
 //		http://localhost:8080/AccountProject/api/account/deleteAccount/1
-		return service.deleteAccount(id);
+		return service.deleteAccount(classroomID);
 	}
 	
-	@Path("/updateAccount/{id}")
+	@Path("/updateAccount/{classroomID}")
 	@POST
 	@Produces({ "application/json" })
-	public String updateAccount(@PathParam("id") Long id, String account) {
+	public String updateAccount(@PathParam("classroomID") Long classroomID, String trainerFullName) {
 //		http://localhost:8080/AccountProject/api/account/updateAccount/3
-		return service.updateAccount(id,account);
+		return service.updateAccount(classroomID,trainerFullName);
 	}
 
 	public void setService(ClassroomAccountService service) {

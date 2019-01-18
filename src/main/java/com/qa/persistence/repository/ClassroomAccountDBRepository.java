@@ -39,9 +39,9 @@ public class ClassroomAccountDBRepository implements ClassroomAccountRepository 
 	}
 
 	@Transactional(REQUIRED)
-	public String updateAccount(Long id, String fullName) {
-		Account accountInDB = findAccount(id);
-		Account newAccount = util.getObjectForJSON(fullName, Account.class);
+	public String updateAccount(Long classroomID, String trainerFullName) {
+		Account accountInDB = findAccount(classroomID);
+		Account newAccount = util.getObjectForJSON(trainerFullName, Account.class);
 		if(accountInDB != null) {
 			manager.remove(accountInDB);
 			manager.persist(newAccount);
@@ -51,8 +51,8 @@ public class ClassroomAccountDBRepository implements ClassroomAccountRepository 
 	}
 
 	@Transactional(REQUIRED)
-	public String deleteAccount(Long id) {
-		Account accountInDB = findAccount(id);
+	public String deleteAccount(Long classroomID) {
+		Account accountInDB = findAccount(classroomID);
 		if(accountInDB != null) {
 			manager.remove(accountInDB);
 			return "{\"message\": \"account sucessfully deleted\"}";
@@ -60,8 +60,8 @@ public class ClassroomAccountDBRepository implements ClassroomAccountRepository 
 		return "{\"message\": \"deletion unsuccessful\"}";
 	}
 	
-	private Account findAccount(Long id) {
-		return manager.find(Account.class, id);
+	private Account findAccount(Long classroomID) {
+		return manager.find(Account.class, classroomID);
 	}
 	
 	public void setManager(EntityManager manager) {

@@ -6,7 +6,7 @@ public interface ClassroomAccountService {
 
 	String createAccount(String account);
 	
-	String updateAccount(Long id, String fullName);
+	String updateAccount(Long classroomID, String trainerFullName);
 
-	String deleteAccount(Long id);
+	String deleteAccount(Long classroomID);
 }
