@@ -9,25 +9,25 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import com.qa.business.service.ClassroomAccountService;
 
+
 @Path("/account")
 public class AccountEndpoint {
 	
 	@Inject
 	private ClassroomAccountService service;
-
+	
 	@Path("/getAllAccounts")
 	@GET
 	@Produces({ "application/json" })
 	public String getAllAccounts() {
-//		http://localhost:8080/AccountProject/api/account/getAllAccounts
 		return service.getAllAccounts();
 	}
+	
 
 	@Path("/createAccount")
 	@POST
 	@Produces({ "application/json" })
 	public String createAccount(String account) {
-//		http://localhost:8080/AccountProject/api/account/createAccount
 		return service.createAccount(account);
 	}
 
@@ -35,7 +35,7 @@ public class AccountEndpoint {
 	@DELETE
 	@Produces({ "application/json" })
 	public String deleteAccount(@PathParam("classroomID") Long classroomID) {
-//		http://localhost:8080/AccountProject/api/account/deleteAccount/1
+
 		return service.deleteAccount(classroomID);
 	}
 	
@@ -43,7 +43,6 @@ public class AccountEndpoint {
 	@POST
 	@Produces({ "application/json" })
 	public String updateAccount(@PathParam("classroomID") Long classroomID, String trainerFullName) {
-//		http://localhost:8080/AccountProject/api/account/updateAccount/3
 		return service.updateAccount(classroomID,trainerFullName);
 	}
 
@@ -51,11 +50,4 @@ public class AccountEndpoint {
 		this.service = service;
 	}
 
-//  Post a new Account / Update	
-//	{
-//		firstName: Jane,
-//		lastName: Do,
-//		accountNumbe: 2
-//	}
-	
 }

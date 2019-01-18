@@ -21,7 +21,6 @@ public class TraineeAccountEndpoint {
 	@GET
 	@Produces({ "application/json" })
 	public String getAllTraineeAccounts() {
-//		http://localhost:8080/AccountProject/api/account/getAllAccounts
 		return service.getAllTraineeAccounts();
 	}
 	
@@ -29,7 +28,6 @@ public class TraineeAccountEndpoint {
 	@POST
 	@Produces({ "application/json" })
 	public String createAccount(String account) {
-//		http://localhost:8080/AccountProject/api/account/createAccount
 		return service.createTraineeAccount(account);
 	}
 
@@ -37,7 +35,6 @@ public class TraineeAccountEndpoint {
 	@DELETE
 	@Produces({ "application/json" })
 	public String deleteAccount(@PathParam("traineeID") Long traineeID) {
-//		http://localhost:8080/AccountProject/api/account/deleteAccount/1
 		return service.deleteTraineeAccount(traineeID);
 	}
 	
@@ -45,7 +42,6 @@ public class TraineeAccountEndpoint {
 	@POST
 	@Produces({ "application/json" })
 	public String updateAccount(@PathParam("traineeID") Long traineeID, String traineeFullName) {
-//		http://localhost:8080/AccountProject/api/account/updateAccount/3
 		return service.updateTraineeAccount(traineeID,traineeFullName);
 	}
 

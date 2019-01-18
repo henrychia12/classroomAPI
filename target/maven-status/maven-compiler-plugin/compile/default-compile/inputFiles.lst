@@ -1,8 +1,14 @@
-C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\persistence\repository\ClassroomAccountDBRepository.java
-C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\util\JSONUtil.java
 C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\persistence\repository\ClassroomAccountRepository.java
 C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\rest\JAXActivator.java
-C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\business\service\ClassroomAccountServiceImpl.java
+C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\persistence\domain\TraineeAccount.java
+C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\business\service\TraineeAccountServiceImpl.java
 C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\rest\AccountEndpoint.java
+C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\business\service\TraineeAccountService.java
 C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\persistence\domain\Account.java
+C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\persistence\repository\ClassroomAccountDBRepository.java
+C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\persistence\repository\TraineeAccountDBRepository.java
+C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\util\JSONUtil.java
+C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\business\service\ClassroomAccountServiceImpl.java
+C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\rest\TraineeAccountEndpoint.java
+C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\persistence\repository\TraineeAccountRepository.java
 C:\Users\Admin\Desktop\classroomAPI\src\main\java\com\qa\business\service\ClassroomAccountService.java
