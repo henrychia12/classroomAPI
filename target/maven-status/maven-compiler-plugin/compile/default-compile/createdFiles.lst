@@ -1,0 +1,8 @@
+com\qa\business\service\ClassroomAccountServiceImpl.class
+com\qa\persistence\domain\Account.class
+com\qa\rest\AccountEndpoint.class
+com\qa\util\JSONUtil.class
+com\qa\persistence\repository\ClassroomAccountRepository.class
+com\qa\persistence\repository\ClassroomAccountDBRepository.class
+com\qa\business\service\ClassroomAccountService.class
+com\qa\rest\JAXActivator.class

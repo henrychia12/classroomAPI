@@ -1,3 +1,3 @@
-INSERT INTO ACCOUNT (fullName) VALUES ('John Doe')
-INSERT INTO ACCOUNT (fullName) VALUES ('Jane Smith')
-INSERT INTO ACCOUNT (fullName) VALUES ('Jim Taylor')
+INSERT INTO ACCOUNT (trainerFullName) VALUES ('John Doe')
+INSERT INTO ACCOUNT (trainerFullName) VALUES ('Jane Smith')
+INSERT INTO ACCOUNT (trainerFullName) VALUES ('Jim Taylor')
